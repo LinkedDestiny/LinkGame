@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">AndroidGame</string>
+    <string name="hello_world">加载积分墙中，请等待……</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>
