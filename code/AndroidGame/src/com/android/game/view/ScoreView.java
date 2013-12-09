@@ -31,24 +31,16 @@ public class ScoreView{
 	}
 	
 	public void initlizeShelf(){
-		if( testConnectivityManager() )
-			shelf = new ShelfView( activity );
-		else
-			shelf = null;
 	}
 	
 	public boolean setShelf(){
-		if( testConnectivityManager() && shelf != null ){
-			shelf.getShelf();
-			return true;
-		}
-		return false;
+		return true;
 	}
 	public boolean testConnectivityManager(){
         ConnectivityManager connManager = (ConnectivityManager)activity.getSystemService(Context.CONNECTIVITY_SERVICE);
-        // »ñÈ¡´ú±íÁªÍø×´Ì¬µÄNetWorkInfo¶ÔÏó
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½NetWorkInfoï¿½ï¿½ï¿½ï¿½
         NetworkInfo networkInfo = connManager.getActiveNetworkInfo();
-        // »ñÈ¡µ±Ç°µÄÍøÂçÁ¬½ÓÊÇ·ñ¿ÉÓÃ
+        // ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
         if (null == networkInfo){
         	return false;
         }else{
